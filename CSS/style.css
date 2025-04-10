@@ -67,8 +67,12 @@ nav {
 }
 
 body {
-    background-color: black;
+    background-image: url(../fotos/ImagendeFundoparaoIndex.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 p {
@@ -88,7 +92,7 @@ footer {
 
 
 main {
-    width: 100%;
+    width: 80%;
     margin: auto;
 
     .banner {
@@ -118,7 +122,7 @@ main {
                     font-size: 18px;
                     color: rgba(255, 255, 255, 0.8);
                     top: 50%;
-                    left: 50%;
+                    left: 40%;
                     z-index: 1;
                 }
 
@@ -132,16 +136,15 @@ main {
             background-color: rgb(26, 0, 97);
             color: white;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 2px;
             padding: 10px 20px;
-            margin-top: 10px;
+            margin-top: 30px;
             display: inline-block;
             transition: 0.3s;
-
-            &:hover {
-                background-color: rgb(50, 0, 150);
-                color: white;
-            }
+        }
+        .btn:hover {
+            background-color: rgb(50, 0, 150);
+            color: white;
         }
     }
 
