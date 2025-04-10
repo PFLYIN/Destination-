@@ -1,0 +1,180 @@
+* {
+    margin: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    border-color: rgb(0, 0, 0);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+
+}
+
+section {
+    padding: 50px 0;
+
+}
+
+nav {
+    float: right;
+
+    ul {
+        list-style: none;
+        font-family: Arial;
+        text-transform: uppercase;
+
+        li {
+            display: inline-block;
+            margin: 15px;
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                transition: 0.3s all;
+            }
+
+            a:hover {
+
+                color: rgb(238, 255, 0);
+                padding: 10px;
+                border-radius: 50px;
+            }
+
+            .btn {
+                background-color: rgba(209, 209, 209, 0.219);
+                padding: 10px 20px 10px 20px;
+                border-radius: 50px;
+
+                .btn:hover {
+
+
+                    color: white;
+
+                }
+
+
+
+
+
+            }
+        }
+    }
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: Arial;
+    color: rgb(146, 146, 146);
+}
+
+footer {
+    background-color: black;
+    padding: 20px 0px;
+
+    p {
+        text-align: center;
+    }
+}
+
+
+
+main {
+    width: 100%;
+    margin: auto;
+
+    .banner {
+        position: relative;
+
+
+        .grid {
+            justify-content: center;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 0 20px 5px rgba(98, 0, 255, 0.5);
+            }
+
+            .col {
+                text-align: center;
+                margin-top: 20px;
+
+
+                p {
+                    position: absolute;
+                    font-size: 18px;
+                    color: rgba(255, 255, 255, 0.8);
+                    top: 50%;
+                    left: 50%;
+                    z-index: 1;
+                }
+
+                a {
+                    color: rgba(255, 255, 255, 0.733);
+                }
+            }
+        }
+
+        .btn {
+            background-color: rgb(26, 0, 97);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: rgb(50, 0, 150);
+                color: white;
+            }
+        }
+    }
+
+    #Maculado {
+        h2 {
+            text-transform: uppercase;
+            margin: 30px;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .Maculado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 850px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 5px rgba(251, 255, 0, 0.616);
+            margin: 20px auto;
+
+        }
+
+        p {
+            font-size: 20px;
+            margin: 70px;
+            font-family: Arial;
+            text-align: center;
+            color: rgb(194, 192, 192);
+        }
+    }
+}
