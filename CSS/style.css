@@ -167,17 +167,26 @@ main {
             width: 850px;
             height: auto;
             border-radius: 20px;
-            box-shadow: 0 0 20px 5px rgba(251, 255, 0, 0.616);
+            box-shadow: 0 0 17px 8px rgb(148, 148, 148);
             margin: 20px auto;
 
         }
 
         p {
-            font-size: 20px;
-            margin: 70px;
+            font-size: 21px;
+            margin: 31px;
             font-family: Arial;
             text-align: center;
-            color: rgb(194, 192, 192);
+            color: rgb(255, 255, 255);
+        }
+        h3 {
+            font-size: 37px;
+            font-family:  'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0 5px rgba(255, 255, 255);
+            text-transform: uppercase;
+            
         }
     }
 }

@@ -7,7 +7,7 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     font-family: Arial, sans-serif;
 }
 
@@ -123,7 +123,7 @@ main{
 
 .colum img {
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 300px;
     display: flex;
     justify-content: center;
