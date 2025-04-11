@@ -1,6 +1,12 @@
 * {
     margin: 0%;
 }
+background-image: url(..); 
+background-size: cover; 
+background-repeat: no-repeat; 
+background-position: center;
+color: white;
+font-family: Arial, sans-serif;
 
 html {
     scroll-behavior: smooth;
