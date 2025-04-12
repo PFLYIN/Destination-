@@ -67,7 +67,7 @@ nav {
 }
 
 body {
-    background-image: url(../fotos/ImagendeFundoparaoIndex.jpg); 
+    background-image: url(../fotos/ImagenDeFundoParaGallry.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
@@ -105,7 +105,7 @@ main {
             border-radius: 20px;
             margin: 20px auto;
 
-            img {
+            .img {
                 width: 100%;
                 height: auto;
                 border-radius: 20px;
@@ -117,34 +117,41 @@ main {
                 margin-top: 20px;
 
 
-                p {
+                h3 {
                     position: absolute;
-                    font-size: 18px;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+                    font-family: 'Times New Roman', Times, serif;
+                    text-transform: uppercase;
+                    font-size: 25px;
                     color: rgba(255, 255, 255, 0.8);
-                    top: 50%;
-                    left: 40%;
-                    z-index: 1;
-                }
-
-                a {
-                    color: rgba(255, 255, 255, 0.733);
+                    margin: 10px 0;
                 }
             }
         }
-
+        .texto-retro {
+            text-transform: uppercase;
+            margin: 7px;
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial;
+        }
         .btn {
             background-color: rgb(26, 0, 97);
             color: white;
             text-decoration: none;
-            border-radius: 2px;
-            padding: 10px 20px;
-            margin-top: 30px;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            font-size: 20px;
             display: inline-block;
             transition: 0.3s;
         }
         .btn:hover {
             background-color: rgb(50, 0, 150);
             color: white;
+            
         }
     }
 
@@ -173,8 +180,8 @@ main {
         }
 
         p {
-            font-size: 21px;
-            margin: 31px;
+            font-size: 20px;
+            margin: 30px;
             font-family: Arial;
             text-align: center;
             color: rgb(255, 255, 255);
@@ -188,5 +195,35 @@ main {
             text-transform: uppercase;
             
         }
+    }
+}
+
+.logosdofooter {
+    background-color: #00000096;
+    color: #f0f0f0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+   .InsTube {
+        display: flex;
+        justify-content: center;
+        gap: 25px; /* espaço entre os ícones */
+        margin-bottom: 10px;
+    }
+    .InsTube-icon {
+        width: 36px;
+        height: 36px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .InsTube-icon:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+  
+    .footerP {
+        font-size: 1.0rem;
+        color: #ccc;
     }
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0%;
 }
-background-image: url(..); 
+background-image: url(); 
 background-size: cover; 
 background-repeat: no-repeat; 
 background-position: center;
@@ -33,6 +33,7 @@ nav {
         list-style: none;
         font-family: Arial;
         text-transform: uppercase;
+        
 
         li {
             display: inline-block;
@@ -41,7 +42,7 @@ nav {
             a {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
-                transition: 0.3s all;
+                transition-behavior: 0.5;
             }
 
             a:hover {
@@ -54,7 +55,7 @@ nav {
             .btn {
                 background-color: rgba(209, 209, 209, 0.219);
                 padding: 10px 20px 10px 20px;
-                border-radius: 50px;
+                border-radius: 40px;
 
                 .btn:hover {
 
@@ -89,7 +90,8 @@ main {
             justify-content: center;
         }
     }
-     h3 {
+     
+    h3 {
         position: absolute;
         top: 40%;
         left: 50%;
@@ -99,5 +101,86 @@ main {
         font-size: 25px;
         color: rgba(255, 255, 255, 0.8);
         margin: 10px 0;
+    }
+    .texto-retro {
+        text-transform: uppercase;
+        margin: 7px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial;
+    }
+    .btn {
+        background-color: rgb(26, 0, 97);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background-color: rgb(50, 0, 150);
+        color: white;
+    }
+}
+
+.escrita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h1 {
+        text-transform: uppercase;
+        margin: 16px;
+        font-size: 27px;
+        text-align: center;
+        font-family: Arial; 
+    }
+    p {
+        font-size: 21px;
+        margin: 18px;
+        font-family: Arial;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    h2 {
+        text-transform: uppercase;
+        margin: 16px;
+        font-size: 26px;
+        text-align: center;
+        font-family: Arial;
+    }
+}
+
+.logosdofooter {
+    background-color: #00000096;
+    color: #f0f0f0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+   .InsTube {
+        display: flex;
+        justify-content: center;
+        gap: 25px; /* espaço entre os ícones */
+        margin-bottom: 10px;
+    }
+    .InsTube-icon {
+        width: 36px;
+        height: 36px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .InsTube-icon:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+  
+    .footerP {
+        font-size: 1.0rem;
+        color: #ccc;
     }
 }
