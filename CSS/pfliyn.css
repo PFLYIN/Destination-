@@ -1,13 +1,15 @@
 * {
     margin: 0%;
 }
-background-image: url(../fotos/minhafoto.jpg); 
+body {
+background-image: url(../fotos/minhafoto.jpg);
 background-size: cover; 
 background-repeat: no-repeat; 
 background-position: center;
 color: white;
 font-family: Arial, sans-serif;
-
+animation: fadeInSlide 1s ease-out;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +20,9 @@ header {
     width: 100%;
     top: 0;
     z-index: 2;
-
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 section {
@@ -124,6 +128,9 @@ main {
         background-color: rgb(50, 0, 150);
         color: white;
     }
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 .escrita {
@@ -153,6 +160,9 @@ main {
         text-align: center;
         font-family: Arial;
     }
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 .logosdofooter {
@@ -162,8 +172,7 @@ main {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  
-   .InsTube {
+    .InsTube {
         display: flex;
         justify-content: center;
         gap: 25px; /* espaço entre os ícones */
@@ -182,5 +191,16 @@ main {
     .footerP {
         font-size: 1.0rem;
         color: #ccc;
+    }
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

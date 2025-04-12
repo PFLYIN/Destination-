@@ -1,0 +1,64 @@
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeInSlide 1s ease-out;
+}
+
+header, main, footer {
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+#contato {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contato h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contato input, #contato textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contato button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: #0056b3;
+}

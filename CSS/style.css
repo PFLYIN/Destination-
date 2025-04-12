@@ -12,7 +12,9 @@ header {
     width: 100%;
     top: 0;
     z-index: 2;
-
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 section {
@@ -73,6 +75,7 @@ body {
     background-position: center;
     color: white;
     font-family: Arial, sans-serif;
+    animation: fadeInSlide 1s ease-out;
 }
 
 p {
@@ -83,6 +86,9 @@ p {
 footer {
     background-color: black;
     padding: 20px 0px;
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 
     p {
         text-align: center;
@@ -94,6 +100,9 @@ footer {
 main {
     width: 80%;
     margin: auto;
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 
     .banner {
         position: relative;
@@ -225,5 +234,16 @@ main {
     .footerP {
         font-size: 1.0rem;
         color: #ccc;
+    }
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

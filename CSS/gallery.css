@@ -1,3 +1,14 @@
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0%;
 }
@@ -9,6 +20,7 @@ body {
     background-position: center;
     color: rgba(255, 255, 255, 0);
     font-family: Arial, sans-serif;
+    animation: fadeInSlide 1s ease-out;
 }
 
 html {
@@ -16,15 +28,17 @@ html {
 }
 
 header {
-        border-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     position: sticky;
     width: 100%;
     top: 0;
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 section {
     padding: 50px 0;
-
 }
 
 nav {
@@ -46,7 +60,6 @@ nav {
             }
 
             a:hover {
-
                 color: rgb(238, 255, 0);
                 padding: 10px;
                 border-radius: 50px;
@@ -57,7 +70,7 @@ nav {
                 padding: 10px 20px 10px 20px;
                 border-radius: 50px;
                 
-            .btn:hover {
+                .btn:hover {
                     color: white;
                 }
             }
@@ -65,7 +78,7 @@ nav {
     }
 }
 
-main{
+main {
     .inicio {
         position: relative;
         text-align: center;
@@ -107,28 +120,28 @@ main{
         .btn:hover {
             background-color: rgb(50, 0, 150);
             color: white;
-            
         }
     }
     .btn {
-         background-color: rgb(26, 0, 97);
-         color: white;
-         text-decoration: none;
-         border-radius: 4px;
-         padding: 10px 20px;
-         margin-top: 3px; 
-         display: inline-block;
-         transition: 0.3s;
-         font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(26, 0, 97);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin-top: 3px; 
+        display: inline-block;
+        transition: 0.3s;
+        font-family: Georgia, 'Times New Roman', Times, serif;
 
-           &:hover {
-             background-color: rgb(50, 0, 150);
-             color: white;
-         }
+        &:hover {
+            background-color: rgb(50, 0, 150);
+            color: white;
+        }
     }
+    animation: fadeInSlide 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
-
-
 
 .grid-6 {
     display: grid;
@@ -149,7 +162,6 @@ main{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 20px 5px rgba(40, 0, 63, 0.623); 
-       
 }
 
 .logosdofooter {
@@ -159,8 +171,7 @@ main{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  
-   .InsTube {
+    .InsTube {
         display: flex;
         justify-content: center;
         gap: 25px; /* espaço entre os ícones */
