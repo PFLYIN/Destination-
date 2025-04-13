@@ -92,6 +92,8 @@ main {
         .bemvindo {
             width: 90%;
             justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 5px rgba(98, 0, 255, 0.5);
         }
         h3 {
             font-family: Arial, Helvetica, sans-serif;
