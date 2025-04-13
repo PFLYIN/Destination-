@@ -33,7 +33,7 @@ section {
 nav {
     float: right;
 
-    ul {
+    .nav-list {
         list-style: none;
         font-family: Arial;
         text-transform: uppercase;
