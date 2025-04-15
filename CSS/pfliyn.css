@@ -20,7 +20,7 @@ html {
     width: 100%;
     top: 0;
     z-index: 2;
-    animation: fadeInSlide 1s ease-out;
+    
     animation-delay: 0.2s;
     animation-fill-mode: both;
 
@@ -210,14 +210,14 @@ main {
 }
 .menu-toggle {
     display: none;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: white;
     background: none;
     border: none;
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 15px;
     z-index: 1001;
 }
 @media (max-width: 768px) {
@@ -230,12 +230,12 @@ main {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 70px;
+        top: 18px;
         right: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.95);
-        padding: 1rem 0;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
         z-index: 1000;
+        
     }
 
     .nav-desktop.active {
@@ -248,6 +248,7 @@ main {
         margin: 0;
         padding: 0;
         width: 100%;
+        
     }
 
     .nav-list1 li {
@@ -263,4 +264,10 @@ main {
     .nav-list1 li a:hover {
         color: yellow;
     }
+main { 
+    h3 {
+        font-size: 25px;
+    }
+             
+    }    
 }
