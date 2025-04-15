@@ -2,7 +2,7 @@
     margin: 0%;
 }
 body {
-background-image: url(../fotos/minhafoto.jpg);
+background-image: url(../fotos/fundodefi1.png);
 background-size: cover; 
 background-repeat: no-repeat; 
 background-position: center;
@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.header-desktop {
     border-color: rgb(0, 0, 0);
     position: sticky;
     width: 100%;
@@ -23,17 +23,15 @@ header {
     animation: fadeInSlide 1s ease-out;
     animation-delay: 0.2s;
     animation-fill-mode: both;
-}
 
-section {
+ section {
     padding: 50px 0;
+ }
 
-}
-
-nav {
+ .nav-desktop {
     float: right;
 
-    .nav-list {
+    .nav-list1 {
         list-style: none;
         font-family: Arial;
         text-transform: uppercase;
@@ -67,14 +65,16 @@ nav {
                     color: white;
 
                 }
+            }
 
 
 
 
 
+             
             }
         }
-    }
+    } 
 }
 
 main {
@@ -206,5 +206,61 @@ main {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+.menu-toggle {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-desktop {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    .nav-desktop.active {
+        display: flex;
+    }
+
+    .nav-list1 {
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-list1 li {
+        margin: 10px 0;
+    }
+
+    .nav-list1 li a {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .nav-list1 li a:hover {
+        color: yellow;
     }
 }
