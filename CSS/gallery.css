@@ -194,3 +194,61 @@ main {
         color: #ccc;
     }
 }
+.menu-toggle {
+    display: none;
+    font-size: 2.0rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: rgba(0, 0, 0, 0.74);
+    z-index: 1001;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-desktop {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1000;
+        
+    }
+
+    .nav-desktop.active {
+        display: flex;
+    }
+
+    .nav-list1 {
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        
+    }
+
+    .nav-list1 li {
+        margin: 10px 0;
+    }
+
+    .nav-list1 li a {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .nav-list1 li a:hover {
+        color: yellow;
+    }
+}

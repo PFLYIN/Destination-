@@ -137,6 +137,7 @@ main {
                     color: rgba(255, 255, 255, 0.8);
                     margin: 10px 0;
                 }
+                
             }
         }
         .texto-retro {
@@ -145,6 +146,7 @@ main {
             font-size: 20px;
             text-align: center;
             font-family: Arial;
+            color: rgb(170, 170, 170);
         }
         .btn {
             background-color: rgb(26, 0, 97);
@@ -309,7 +311,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin: 10px;
-    text-align: justify;
+    text-align: center;
+    font-family: Arial;
+    color: rgb(170, 170, 170);
 }
 
 
@@ -358,6 +362,8 @@ img {
     font-size: 18px;
     margin: 10px;
     text-align: center;
+    font-family: Arial;
+    color: rgb(170, 170, 170);
 }
 
 
@@ -372,7 +378,7 @@ img {
     width: 100%;
     height: auto;
     margin: 10px auto;
-    max-width: 80vw;
+    max-width: 85vw;
 }
 
 #Maculado p {
