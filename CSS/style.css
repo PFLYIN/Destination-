@@ -67,7 +67,9 @@ nav {
         }
     }
 }
-
+ iframe { 
+   
+ }
 body {
     background-image: url(../fotos/ImagenDeFundoParaGallry.jpg);
     background-size: cover; 
