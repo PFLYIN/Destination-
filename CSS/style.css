@@ -33,7 +33,7 @@ nav {
 
         li {
             display: inline-block;
-            margin: 15px;
+            margin: 20px;
 
             a {
                 text-decoration: none;
@@ -171,7 +171,7 @@ main {
     #Maculado {
         h2 {
             text-transform: uppercase;
-            margin: 30px;
+            margin: 20px;
             text-align: center;
             font-family: Arial;
         }
@@ -193,14 +193,14 @@ main {
         }
 
         p {
-            font-size: 20px;
-            margin: 30px;
+            font-size: 23px;
+            margin: 15px;
             font-family: Arial;
             text-align: center;
             color: rgb(255, 255, 255);
         }
         h3 {
-            font-size: 37px;
+            font-size: 28px;
             font-family:  'Times New Roman', Times, serif;
             text-align: center;
             color: rgb(255, 255, 255);

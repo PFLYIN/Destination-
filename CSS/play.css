@@ -22,13 +22,50 @@ section {
 
 }
 
-iframe {
+.iframe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     height: 100vh;
+    background-color: black;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.fullscreen-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fullscreen-btn:hover {
+    background-color: #3700b3;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 95%;
+        height: 70vh;
+    }
+
+    .fullscreen-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
 nav {
