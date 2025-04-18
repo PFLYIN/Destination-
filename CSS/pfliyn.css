@@ -8,7 +8,7 @@ background-repeat: no-repeat;
 background-position: center;
 color: white;
 font-family: Arial, sans-serif;
-animation: fadeInSlide 1s ease-out;
+animation: fadeInSlide 2s ease-out;
 }
 html {
     scroll-behavior: smooth;
@@ -21,7 +21,7 @@ html {
     top: 0;
     z-index: 2;
     
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
 
  section {
@@ -35,6 +35,7 @@ html {
         list-style: none;
         font-family: Arial;
         text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.603);
         
 
         li {
@@ -66,12 +67,7 @@ html {
 
                 }
             }
-
-
-
-
-
-             
+        
             }
         }
     } 
@@ -201,7 +197,7 @@ main {
 @keyframes fadeInSlide {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(60px);
     }
     to {
         opacity: 1;

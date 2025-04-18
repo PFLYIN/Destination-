@@ -12,8 +12,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 2;
-    animation: fadeInSlide 1s ease-out;
-    animation-delay: 0.2s;
+    animation: fadeInSlide 2s ease-out;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
 }
 
@@ -29,6 +29,7 @@ nav {
         list-style: none;
         font-family: Arial;
         text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.418);
 
         li {
             display: inline-block;
@@ -48,7 +49,7 @@ nav {
             }
 
             .btn {
-                background-color: rgba(209, 209, 209, 0.219);
+                background-color: rgb(236, 234, 234);
                 padding: 10px 20px 10px 20px;
                 border-radius: 50px;
 
@@ -67,9 +68,7 @@ nav {
         }
     }
 }
- iframe { 
-   
- }
+
 body {
     background-image: url(../fotos/ImagenDeFundoParaGallry.jpg);
     background-size: cover; 
@@ -82,18 +81,19 @@ body {
 
 p {
     font-family: Arial;
-    color: rgb(146, 146, 146);
+    color: rgb(241, 238, 238);
 }
 
 footer {
     background-color: black;
     padding: 20px 0px;
-    animation: fadeInSlide 1s ease-out;
-    animation-delay: 0.2s;
+    animation: fadeInSlide 2s ease-out;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
 
     p {
         text-align: center;
+
     }
 }
 
@@ -102,8 +102,8 @@ footer {
 main {
     width: 80%;
     margin: auto;
-    animation: fadeInSlide 1s ease-out;
-    animation-delay: 0.2s;
+    animation: fadeInSlide 2s ease-out;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
 
     .banner {
