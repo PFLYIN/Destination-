@@ -17,6 +17,26 @@ header {
     animation-fill-mode: both;
 }
 
+.header-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-desktop .div-logo img {
+    width: 120px; /* Tamanho ideal */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
+.header-desktop img {
+    width: 120px; /* Tamanho ideal */
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
 section {
     padding: 50px 0;
 

@@ -12,20 +12,41 @@
 
 <body>
     <header class="header-desktop">
-        <a href="index.html" title="Sobre Nós">
-           <img src="fotos/LogoTipo2.png" alt="Destinationlogo"> 
+        <a href="index.html" title="Sobre Nós" class="div-logo">
+           <img src="fotos/logodestination.png" alt="Destinationlogo"> 
         </a>
         <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
         <nav class="nav-desktop">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
                 <li><a href="destinationgaleria.html">Galeria</a></li>
+                <li><a href="destinationjogo.html">Destination</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="play.html">Pla</a></li>
+               
             </ul>
         </nav>
     </header>
 
+    <div class="iframe-container">
+        <iframe src="jogo/index.html"></iframe>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Tela cheia</button>
+    </div>
 
-    <iframe src="jogo/index.html" height="800%;" > </iframe>
-    
+    <script>
+        function toggleFullscreen() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { /* Firefox */
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+    <script src="JS/menu.js"></script>  
+</body>
+
+</html>

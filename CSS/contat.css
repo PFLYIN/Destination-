@@ -19,6 +19,19 @@ header, main, footer {
     animation-fill-mode: both;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.div-logo img {
+    width: 120px; /* Tamanho ideal */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
 #contato {
     max-width: 600px;
     margin: 0 auto;
