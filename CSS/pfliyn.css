@@ -26,10 +26,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-}
-.div-logo {
-    
+    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
+    margin: 0; /* Remove margens que possam interferir */
+    padding: 0 80px; /* Aumenta ainda mais o espaçamento nas laterais */
 }
 
 .div-logo img {

@@ -15,7 +15,7 @@
         <a href="index.html" title="Sobre Nós" class="div-logo">
            <img src="fotos/logodestination.png" alt="Destinationlogo"> 
         </a>
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <button class="menu-toggle" aria-label="Abrir Menu" onclick="toggleMenu()">&#9776;</button>
         <nav class="nav-desktop">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
@@ -44,6 +44,11 @@
             } else if (iframe.msRequestFullscreen) { /* IE/Edge */
                 iframe.msRequestFullscreen();
             }
+        }
+
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-desktop');
+            nav.classList.toggle('active');
         }
     </script>
     <script src="JS/menu.js"></script>  

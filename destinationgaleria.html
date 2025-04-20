@@ -25,20 +25,26 @@
         <section class="inicio">
             <div class="grid">
                 <div class="col">
+                    <h3> Seja bem vindo Máculado(a)! </h3>
+                    <img src="1a4fee93-18f0-4e44-9754-80f9e3354fa8.gif" alt="Destinationlogo" class="bemvindo">
                     
-                           <h3> Seja bem vindo Máculado(a)! </h3>
-                    <img src="1a4fee93-18f0-4e44-9754-80f9e3354fa8.gif"  alt="Destinationlogo" class="bemvindo">
+                    <div class="texto-descritivo">
+                        <p>Essas imagens guardam mais do que pixels — são fragmentos de um mundo esquecido, vislumbres do que te espera.</p>
+                        <p>Observe com atenção, Máculado(a)... cada detalhe pode ser uma pista.</p>
+                        <p>Mas cuidado: encarar o desconhecido tem seu preço.</p>
+                        <p>Aqui você vai encontrar artes que revelam os bastidores do nosso universo, criaturas que talvez você ainda nem tenha enfrentado</p>
+                        <p>e lugares que, por enquanto, só existem nas sombras.</p>
+                        <p>Essa galeria não é só visual — é um portal para o que está por vir, ou para o que já foi esquecido.</p>
+                        <p>Algumas dessas imagens contam histórias. Outras escondem segredos. Todas fazem parte da essência do nosso jogo.</p>
+                    </div>
                     
-                    <p class="texto-retro">A galeria deu só um gostinho… bora ver isso em ação?</p>
+                    <p class="texto-retro">A pergunta é: você está pronto pra ver o que ninguém mais deveria?</p>
                     <p>
-                        <a href="destinationjogo.html" title="Destination" class="btn">
-                        Bora pro jogo?</a>
+                        <a href="play.html" title="Destination" class="btn">PLAY</a>
                     </p>
                 </div>
             </div>
         </section>
-
-
 
         <section class="grid-6">
            
@@ -88,5 +94,21 @@
         <p class="footerP">© 2025 Seja bem-vindo à PFLIYN Studios – onde a imaginação não tem limites!</p>
       </footer>
       <script src="JS/menu.js"></script>
+      <script>
+        function animateGifs() {
+            const gifs = document.querySelectorAll('.colum img');
+            gifs.forEach((gif) => {
+                const rect = gif.getBoundingClientRect();
+                const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+                if (isVisible) {
+                    gif.classList.add('animate'); // Adiciona a classe para animar
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateGifs);
+        window.addEventListener('resize', animateGifs);
+        document.addEventListener('DOMContentLoaded', animateGifs);
+    </script>
 </body>
 </html>

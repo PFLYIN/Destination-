@@ -261,48 +261,16 @@ main {
     .nav-list1 li a:hover {
         color: yellow;
     }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Adjust GIF alignment and animation */
-.grid-6 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.colum img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 0 20px 5px rgba(40, 0, 63, 0.623);
-    animation: fadeIn 1s ease-out;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-    .grid-6 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
 
     .colum img {
-        width: 90%;
-        height: auto;
-        animation: fadeIn 1s ease-out;
+        opacity: 0; /* Inicialmente invisível */
+        transform: translateX(-100px); /* Move para fora da tela */
+        transition: all 0.5s ease-out; /* Transição suave */
+    }
+
+    .colum img.animate {
+        opacity: 1; /* Torna visível */
+        transform: translateX(0); /* Move para o centro */
     }
 }
+

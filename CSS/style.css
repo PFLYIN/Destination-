@@ -15,6 +15,9 @@ header {
     animation: fadeInSlide 2s ease-out;
     animation-delay: 0.4s;
     animation-fill-mode: both;
+    padding: 0 80px; /* Aumenta ainda mais o espaçamento nas laterais */
+    box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
+    margin: 0; /* Remove margens que possam interferir */
 }
 
 .header-desktop {
@@ -80,10 +83,6 @@ nav {
 
                 }
 
-
-
-
-
             }
         }
     }
@@ -94,14 +93,18 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.95); /* Aumenta a opacidade do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona sombra para contraste */
     font-family: Arial, sans-serif;
     animation: fadeInSlide 1s ease-out;
 }
 
 p {
-    font-family: Arial;
-    color: rgb(241, 238, 238);
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    line-height: 1.8; /* Melhora o espaçamento entre linhas */
+    color: rgba(255, 255, 255, 0.95); /* Aumenta a opacidade do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona sombra para contraste */
 }
 
 footer {
@@ -117,7 +120,10 @@ footer {
     }
 }
 
-
+h1, h2, h3 {
+    color: rgba(255, 255, 255, 0.95); /* Aumenta a opacidade dos títulos */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); /* Adiciona sombra para contraste */
+}
 
 main {
     width: 80%;
@@ -128,7 +134,6 @@ main {
 
     .banner {
         position: relative;
-
 
         .grid {
             justify-content: center;
@@ -146,7 +151,6 @@ main {
             .col {
                 text-align: center;
                 margin-top: 20px;
-
 
                 h3 {
                     position: absolute;
@@ -237,7 +241,6 @@ main {
     padding: 5px 0;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
   
    .InsTube {
         display: flex;
@@ -338,7 +341,6 @@ p {
     color: rgb(170, 170, 170);
 }
 
-
 h1 {
     font-size: 22px;
     margin: 12px;
@@ -357,7 +359,6 @@ h3 {
     text-align: center;
 }
 
-
 img {
     width: 100%;
     height: auto;
@@ -370,7 +371,6 @@ img {
     box-shadow: 0 0 15px 3px rgba(98, 0, 255, 0.4);
 }
 
-
 .btn {
     font-size: 16px;
     padding: 8px;
@@ -378,7 +378,6 @@ img {
     display: block;
     text-align: center;
 }
-
 
 .texto-retro {
     font-size: 18px;
@@ -388,13 +387,11 @@ img {
     color: rgb(170, 170, 170);
 }
 
-
 .grid {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 #Maculado img {
     width: 100%;
