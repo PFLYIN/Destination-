@@ -10,6 +10,16 @@
 }
 
 body {
+    background-image: url(../fotos/MinhaimagemdoChat.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
     animation: fadeInSlide 1s ease-out;
 }
 
@@ -38,7 +48,7 @@ header {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #000000;
+    background-color: #0000009c;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(95, 95, 95, 0.1);
     color: rgba(255, 255, 255, 0.95); /* Aumenta a opacidade do texto */
@@ -82,50 +92,71 @@ header {
 #contato button:hover {
     background-color: #0056b3;
 }
+
+.menu-toggle {
+    display: none; /* Esconde o botão no desktop */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100; /* Garante que o botão fique acima do menu */
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: block; /* Exibe o botão no mobile */
     }
 
     .nav-desktop {
-        display: none;
+        display: none; /* Esconde o menu por padrão */
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 18px;
+        top: 60px; /* Ajusta a posição abaixo do botão */
         right: 0;
-        width: 80%;
-        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.521); /* Fundo escuro para o menu */
         z-index: 1000;
-        
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* Esconde o menu fora da tela */
     }
 
     .nav-desktop.active {
         display: flex;
+        transform: translateY(0); /* Mostra o menu ao ativar */
     }
 
     .nav-list1 {
+        display: flex;
         flex-direction: column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
     }
 
     .nav-list1 li {
-        margin: 10px 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-list1 li a {
+        display: block;
+        padding: 10px;
         color: rgb(255, 255, 255);
-        font-size: 1.2rem;
         text-decoration: none;
+        transition: background-color 0.3s ease;
     }
 
     .nav-list1 li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
         color: yellow;
     }
+
     #contato {
         max-width: 90%;
         padding: 15px;
@@ -152,5 +183,8 @@ header {
         padding: 10px;
         width: 100%;
     }
+}
 
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante entre o header e o footer */
 }

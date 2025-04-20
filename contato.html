@@ -17,8 +17,8 @@
         <nav class="nav-desktop">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
-                <li><a href="destinationjogo.html">Galeria</a></li>
-                <li><a href="destinationgaleria.html">Contato</a></li>
+                <li><a href="destinationjogo.html">Destination</a></li>
+                <li><a href="destinationgaleria.html">Galeria</a></li>
             </ul>
         </nav>
     </header>
@@ -57,6 +57,16 @@
         <p class="footerP">© 2025 Seja bem-vindo à PFLIYN Studios – onde a imaginação não tem limites!</p>
       </footer>
     <script src="JS/menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navDesktop = document.querySelector(".nav-desktop");
+
+            menuToggle.addEventListener("click", () => {
+                navDesktop.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

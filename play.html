@@ -50,6 +50,15 @@
             const nav = document.querySelector('.nav-desktop');
             nav.classList.toggle('active');
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navDesktop = document.querySelector(".nav-desktop");
+
+            menuToggle.addEventListener("click", () => {
+                navDesktop.classList.toggle("active");
+            });
+        });
     </script>
     <script src="JS/menu.js"></script>  
 </body>

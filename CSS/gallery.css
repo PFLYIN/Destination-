@@ -230,7 +230,7 @@ main {
         top: 18px;
         right: 0;
         width: 80%;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.479);
         z-index: 1000;
         
     }
@@ -240,26 +240,30 @@ main {
     }
 
     .nav-list1 {
-        flex-direction: column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        
+        display: flex; /* Garante que os itens sejam flexíveis */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        gap: 15px; /* Adiciona espaçamento entre os itens */
+        padding: 10px 0; /* Adiciona espaçamento interno */
     }
 
     .nav-list1 li {
-        margin: 10px 0;
+        margin: 0; /* Remove margens adicionais */
+        width: 100%; /* Garante que cada item ocupe toda a largura */
+        text-align: center; /* Centraliza o texto */
     }
 
     .nav-list1 li a {
-        color: rgb(255, 255, 255);
-        font-size: 1.2rem;
-        text-decoration: none;
+        display: block; /* Garante que o link ocupe toda a largura do item */
+        padding: 10px; /* Adiciona espaçamento interno */
+        color: rgb(255, 255, 255); /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado */
+        transition: background-color 0.3s ease; /* Transição suave para hover */
     }
 
     .nav-list1 li a:hover {
-        color: yellow;
+        background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+        color: yellow; /* Cor do texto ao passar o mouse */
     }
 
     .colum img {
@@ -271,6 +275,33 @@ main {
     .colum img.animate {
         opacity: 1; /* Torna visível */
         transform: translateX(0); /* Move para o centro */
+    }
+
+    .grid-6 {
+        display: flex; /* Altere para flex */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    .colum {
+        width: 100%; /* Garante que cada coluna ocupe toda a largura */
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .colum img {
+        width: 90%; /* Ajusta o tamanho dos GIFs para caber na tela */
+        max-width: 350px; /* Limita o tamanho máximo */
+        height: auto; /* Mantém a proporção */
+        opacity: 0; /* Inicialmente invisível */
+        transform: translateY(50px); /* Move para fora da tela (baixo) */
+        transition: all 0.5s ease-out; /* Transição suave */
+    }
+
+    .colum img.animate {
+        opacity: 1; /* Torna visível */
+        transform: translateY(0); /* Move para o centro */
     }
 }
 
