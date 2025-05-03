@@ -112,6 +112,7 @@ main {
             color: rgba(255, 255, 255, 0.8);
         }
         .texto-retro {
+            color:white;
             text-transform: uppercase;
             margin: 10px;
             font-size: 25px;
