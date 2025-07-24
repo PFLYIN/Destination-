@@ -1,84 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Destination</title>
-   
-    <link href="css/stye.cs" rel=" rel="stylesheet">
+    <title>Destination</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-
-
 <body>
-    
     <header class="header-desktop">
         <a href="index.html" title="Sobre Nós" class="div-logo">
-           <img src="fotos/logodestination.png" alt="Destinationlogo"> 
+            <img src="fotos/logodestination.png" alt="Logo Destination">
         </a>
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <nav class="nav-desktop">
+        <button class="menu-toggle" aria-label="Abrir Menu" aria-controls="nav-principal" aria-expanded="false">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </button>
+        <nav class="nav-desktop" id="nav-principal">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
                 <li><a href="destinationgaleria.html">Galeria</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="play.html">play</a></li>
+                <li><a href="play.html">Play</a></li>
             </ul>
         </nav>
     </header>
-
-
     <main>
         <section class="banner">
             <div class="grid">
                 <div class="col">
-                    
-                 <img 
-                 src="fotos/pfliny.gif" alt="Destinationgif" class="img">
-                   
+                    <img src="fotos/pfliny.gif" alt="Mascote Pfliyn" class="img">
                     <p class="texto-retro">Pixel art na veia! Aproveita a galeria e saca só como tá ficando nosso joguinho com carinho de retrô.</p>
                     <p>
-                        <a href="destinationgaleria.html" title="galeria" class="btn">
-                        Galeria</a>
+                        <a href="destinationgaleria.html" title="Galeria" class="btn">Galeria</a>
                     </p>
-                
-                    <h3> <h3>
-
                 </div>
             </div>
         </section>
-
         <section id="Maculado">
-            <h2>Sejam Bem Vindo, Ó Maculado! </h2>
+            <h2>Sejam Bem Vindo, Ó Maculado!</h2>
             <img src="fotos/ImagenDeIxibição.jpg" alt="Maculado" class="Maculado">
             <p>Olá sublime Maculado(a). Seja bem vindo ao maravilhoso mundo de Limgreve ou o obscuro e terrível mundo de Limgreve.</p>
-            <p>Simplesmente jogado(a) nesse mundo horrendo e corrompido, entre dias e noites indo em busca da reparaçãoda sua alma e a 
-            <br>recuperação neste mundo amaldiçoado. </p>
-            <p>Sozinho, mas seguindo em frente seu caminho, sem parar mesmo pissando em espinhos e no vale da morte lutando contra gigantes.</p>
-            <p>Ó grande Maculado(a), vá e por um sublime sacrifício erga a Grande Chama novamente, sem medo daescuridão ou da morte. </p>
-                <h3>BOA SORTE, VOCÊ VAI PRECISSAR.</h3>
+            <p>Simplesmente jogado(a) nesse mundo horrendo e corrompido, entre dias e noites indo em busca da reparação da sua alma e a<br>recuperação neste mundo amaldiçoado.</p>
+            <p>Sozinho, mas seguindo em frente seu caminho, sem parar mesmo pisando em espinhos e no vale da morte lutando contra gigantes.</p>
+            <p>Ó grande Maculado(a), vá e por um sublime sacrifício erga a Grande Chama novamente, sem medo da escuridão ou da morte.</p>
+            <h3>BOA SORTE, VOCÊ VAI PRECISAR.</h3>
         </section>
     </main>
-
-    
     <footer class="logosdofooter">
         <div class="InsTube">
-        
-           <a href="" target="_blank"  aria-label="Instagram">
-               <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="InsTube-icon"> 
-           </a>
-           <a href="https://youtube.com/@pfliyn?si=1FaBqKuaDfU8-1Lv" target="_blank" aria-label="YouTube">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="InsTube-icon">
+            </a>
+            <a href="https://youtube.com/@pfliyn?si=1FaBqKuaDfU8-1Lv" target="_blank" aria-label="YouTube">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="InsTube-icon">
-           </a>
-           <a href="https://github.com/PFLYIN" target="_blank">
+            </a>
+            <a href="https://github.com/PFLYIN" target="_blank" aria-label="GitHub">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="InsTube-icon">
-           </a>
-           <script src="JS/menu.js"></script>  
+            </a>
         </div>
         <p class="footerP">© 2025 Seja bem-vindo à PFLIYN Studios – onde a imaginação não tem limites!</p>
-      </footer>
-
+    </footer>
+    <script src="JS/menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navDesktop = document.querySelector(".nav-desktop");
+            menuToggle.addEventListener("click", () => {
+                navDesktop.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
-
 </html>

@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/play.css">
 </head>
-
-
 <body>
     <header class="header-desktop">
         <a href="index.html" title="Sobre Nós" class="div-logo">
-           <img src="fotos/logodestination.png" alt="Destinationlogo"> 
+            <img src="fotos/logodestination.png" alt="Logo Destination">
         </a>
-        <button class="menu-toggle" aria-label="Abrir Menu" onclick="toggleMenu()">&#9776;</button>
-        <nav class="nav-desktop">
+        <button class="menu-toggle" aria-label="Abrir Menu" aria-controls="nav-principal" aria-expanded="false">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </button>
+        <nav class="nav-desktop" id="nav-principal">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
                 <li><a href="destinationgaleria.html">Galeria</a></li>
                 <li><a href="destinationjogo.html">Destination</a></li>
                 <li><a href="contato.html">Contato</a></li>
-               
             </ul>
         </nav>
     </header>
-
-    <div class="iframe-container">
-        <iframe src="jogo/index.html"></iframe>
-        <button class="fullscreen-btn" onclick="toggleFullscreen()">Tela cheia</button>
-    </div>
-
+    <main>
+        <div class="iframe-container">
+            <iframe src="jogo/index.html" title="Jogo Destination"></iframe>
+            <button class="fullscreen-btn" onclick="toggleFullscreen()">Tela cheia</button>
+        </div>
+    </main>
+    <footer class="logosdofooter">
+        <div class="InsTube">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="InsTube-icon">
+            </a>
+            <a href="https://youtube.com/@pfliyn?si=1FaBqKuaDfU8-1Lv" target="_blank" aria-label="YouTube">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="InsTube-icon">
+            </a>
+            <a href="https://github.com/PFLYIN" target="_blank" aria-label="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="InsTube-icon">
+            </a>
+        </div>
+        <p class="footerP">© 2025 Seja bem-vindo à PFLIYN Studios – onde a imaginação não tem limites!</p>
+    </footer>
+    <script src="JS/menu.js"></script>
     <script>
         function toggleFullscreen() {
             const iframe = document.querySelector('iframe');
             if (iframe.requestFullscreen) {
                 iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) { /* Firefox */
+            } else if (iframe.mozRequestFullScreen) {
                 iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            } else if (iframe.webkitRequestFullscreen) {
                 iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+            } else if (iframe.msRequestFullscreen) {
                 iframe.msRequestFullscreen();
             }
         }
-
-        function toggleMenu() {
-            const nav = document.querySelector('.nav-desktop');
-            nav.classList.toggle('active');
-        }
-
         document.addEventListener("DOMContentLoaded", () => {
             const menuToggle = document.querySelector(".menu-toggle");
             const navDesktop = document.querySelector(".nav-desktop");
-
             menuToggle.addEventListener("click", () => {
                 navDesktop.classList.toggle("active");
             });
         });
     </script>
-    <script src="JS/menu.js"></script>  
 </body>
-
 </html>

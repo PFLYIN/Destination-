@@ -119,6 +119,10 @@ main {
             text-align: center;
             font-family: Arial;
         }
+        .texto-retro p {
+            color: white !important;
+            font-size: 1.35rem;
+        }
         .btn {
             background-color: rgb(26, 0, 97);
             color: white;

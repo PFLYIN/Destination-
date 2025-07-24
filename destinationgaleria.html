@@ -10,13 +10,17 @@
 <body>
     <header class="header-desktop">
         <a href="index.html" title="Sobre Nós" class="div-logo">
-           <img src="fotos/logodestination.png" alt="Destinationlogo"> 
+            <img src="fotos/logodestination.png" alt="Logo Destination">
         </a>
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <nav class="nav-desktop">
+        <button class="menu-toggle" aria-label="Abrir Menu" aria-controls="nav-principal" aria-expanded="false">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </button>
+        <nav class="nav-desktop" id="nav-principal">
             <ul class="nav-list1">
                 <li><a href="index.html">Sobre Nós</a></li>
-                <li><a href="destinationjogo.html">Destination </a></li>
+                <li><a href="destinationjogo.html">Destination</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -25,9 +29,8 @@
         <section class="inicio">
             <div class="grid">
                 <div class="col">
-                    <h3> Seja bem vindo Máculado(a)! </h3>
-                    <img src="1a4fee93-18f0-4e44-9754-80f9e3354fa8.gif" alt="Destinationlogo" class="bemvindo">
-                    
+                    <h3>Seja bem vindo Máculado(a)!</h3>
+                    <img src="1a4fee93-18f0-4e44-9754-80f9e3354fa8.gif" alt="Bem-vindo à galeria" class="bemvindo">
                     <div class="texto-retro">
                         <p>Essas imagens guardam mais do que pixels — são fragmentos de um mundo esquecido, vislumbres do que te espera.</p>
                         <p>Observe com atenção, Máculado(a)... cada detalhe pode ser uma pista.</p>
@@ -37,7 +40,6 @@
                         <p>Essa galeria não é só visual — é um portal para o que está por vir, ou para o que já foi esquecido.</p>
                         <p>Algumas dessas imagens contam histórias. Outras escondem segredos. Todas fazem parte da essência do nosso jogo.</p>
                     </div>
-                    
                     <p class="texto-retro">A pergunta é: você está pronto pra ver o que ninguém mais deveria?</p>
                     <p>
                         <a href="play.html" title="Destination" class="btn">PLAY</a>
@@ -45,70 +47,63 @@
                 </div>
             </div>
         </section>
-
         <section class="grid-6">
-           
-            </div>
-            
             <div class="colum gif-container">
-                <img src="gifs/parado dentro.gif" alt="Repouso na Dungeon ">
+                <img src="gifs/parado dentro.gif" alt="Repouso na Dungeon">
             </div>
-           
             <div class="colum gif-container">
                 <img src="gifs/correndo.gif" alt="Corrida na Dungeon">
             </div>
-           
             <div class="colum gif-container">
-                <img src="gifs/morteoni.gif" alt="Destination">
+                <img src="gifs/morteoni.gif" alt="Morte Oni">
             </div>
-           
             <div class="colum gif-container">
                 <img src="fotos/GifdeRepousoNoLadodeFora.gif" alt="Repouso no lado de fora">
             </div>
-           
             <div class="colum gif-container">
-                <img src="gifs/caindo.gif" alt="Destination">
+                <img src="gifs/caindo.gif" alt="Caindo na Dungeon">
             </div>
-           
             <div class="colum gif-container">
-                <img src="gifs/informaçoes.gif" alt="Destination">
+                <img src="gifs/informaçoes.gif" alt="Informações do jogo">
             </div>
-            
         </section>
     </main>
-
     <footer class="logosdofooter">
         <div class="InsTube">
-        
-           <a href="" target="_blank"  aria-label="Instagram">
-               <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="InsTube-icon"> 
-           </a>
-           <a href="https://youtube.com/@pfliyn?si=1FaBqKuaDfU8-1Lv" target="_blank" aria-label="YouTube">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="InsTube-icon">
+            </a>
+            <a href="https://youtube.com/@pfliyn?si=1FaBqKuaDfU8-1Lv" target="_blank" aria-label="YouTube">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="InsTube-icon">
-           </a>
-           <a href="https://github.com/PFLYIN" target="_blank">
+            </a>
+            <a href="https://github.com/PFLYIN" target="_blank" aria-label="GitHub">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="InsTube-icon">
-           </a>
-            
+            </a>
         </div>
         <p class="footerP">© 2025 Seja bem-vindo à PFLIYN Studios – onde a imaginação não tem limites!</p>
-      </footer>
-      <script src="JS/menu.js"></script>
-      <script>
+    </footer>
+    <script src="JS/menu.js"></script>
+    <script>
         function animateGifs() {
             const gifs = document.querySelectorAll('.colum img');
             gifs.forEach((gif) => {
                 const rect = gif.getBoundingClientRect();
                 const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
                 if (isVisible) {
-                    gif.classList.add('animate'); // Adiciona a classe para animar
+                    gif.classList.add('animate');
                 }
             });
         }
-
         window.addEventListener('scroll', animateGifs);
         window.addEventListener('resize', animateGifs);
         document.addEventListener('DOMContentLoaded', animateGifs);
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navDesktop = document.querySelector(".nav-desktop");
+            menuToggle.addEventListener("click", () => {
+                navDesktop.classList.toggle("active");
+            });
+        });
     </script>
 </body>
 </html>
